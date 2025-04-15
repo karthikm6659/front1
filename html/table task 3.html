@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr><b>
+            <td>header colunm 1</td>
+            <td>header colunm 2</td>
+            <td>header colunm 3</td>
+            <td>header colunm 4</td>
+            </tr></b>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>row 2 - item 1</td>
+                    <td>row 2 - item 2</td>
+                    <td rowspan="2">row 2;nested table 1
+                        <table border="1">
+                            <tbody>
+                                <tr>
+                                    <td>row haeder 1</td>
+                                    <td>item</td>
+                                </tr>
+                                <tr>
+                                    <td>row header 2</td>
+                                    <td>item</td>
+                                </tr>
+                                <tr>
+                                    <td>row header 2</td>
+                                    <td>item</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>row 2- item 4
+                        a second line
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>row 3;nested table 2
+                        <table border="1">
+                            <tr>
+                                <td>row header 2</td>
+                                <td>item</td>
+                            </tr>
+                            <tr>
+                                <td>row header 2</td>
+                                <td>item</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </td>
+                    <td>row 3- item 2</td>
+                    <td rowspan="2">row 3 - item 3</td>
+                </tr>
+                <tr>
+                    <td>row 4-item 1</td>
+                    <td>row 4-item 2</td>
+                    <td>row 4-item 3</td>
+                </tr>
+                <tr>
+                    <td colspan="4">row 5- last row of outer table</td>
+                </tr>
+            </tbody>
+    </table>
+</body>
+</html>
+<style>
+    td{
+        padding: 10px;
+        width: 10px;
+        height: 10ox;
+        text-align: center;
+    }
+
+</style>
